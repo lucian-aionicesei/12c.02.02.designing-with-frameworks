@@ -1,0 +1,80 @@
+nav {
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+}
+
+header {
+  display: flex;
+}
+
+.header_text {
+  padding-right: 2rem;
+}
+
+#advantages {
+  padding: 2rem;
+}
+
+.product_section {
+  display: flex;
+}
+
+article {
+  padding: 1rem;
+  align-items: center;
+}
+
+.product_graphics {
+  display: flex;
+  align-items: center;
+}
+
+.team_graphics {
+  width: 12rem;
+  height: 12rem;
+  background-color: #252525;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+#team article {
+  display: flex;
+}
+
+#team article:nth-child(odd) {
+  flex-direction: row-reverse;
+}
+
+.team_text {
+    padding: 0rem 2rem;
+}
+
+@media only screen and (max-width: 1200px) {
+  header {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .product_section {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+    #team article {
+        flex-direction: column;
+    }
+
+    #team article:nth-child(odd) {
+        flex-direction: column;
+      }
+
+      .team_text {
+        padding: 0rem 0rem;
+    }
+  }
+  
